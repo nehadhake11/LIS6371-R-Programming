@@ -37,8 +37,7 @@ hist(Hospitaldata$Frequency,
      xlab = "Frequency",
      ylab = "Frequency Count",
      col = "yellow",
-     border = "black",
-     probability = TRUE)
+     border = "black")
 
 #reset plotting window
 par(mfrow = c(1, 1))
