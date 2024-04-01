@@ -16,6 +16,19 @@ Thisn include sample functions available in package with examples of input and o
 
 This is R markdown for Wine data set
 
+Challenges Faced:
+We have to plan all functions will be included in packages in advance.
+Solution:
+During development of package we can update this Markdown file to include all function as we go on.
+This file is created as a basic template which will be further updated as the development of package is completed.
+
+
+
+
+
+
+
+
 ```{r wine}
 #loadData
 Wine_data<- read.table("wine.txt", header = TRUE, sep = ",")
