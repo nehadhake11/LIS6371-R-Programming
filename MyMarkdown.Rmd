@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Thisn include sample functions available in package with examples of input and output for ease of use for other who will be using this once published.
 
 This is R markdown for Wine data set
 
@@ -26,4 +27,3 @@ Plotting Alcohol consumption Deaths.
 ```{r Alcohol, echo=FALSE}
 plot(Wine_data$alcohol, Wine_data$deaths, main = "Alcohol Consumption vs Deaths", xlab = "Alcohol Consumption", ylab = "Deaths")
 ```
-
