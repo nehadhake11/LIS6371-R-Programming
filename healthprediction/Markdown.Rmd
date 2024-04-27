@@ -25,6 +25,8 @@ This package gives the prediction model for determining the probability of havin
   this prorgram gives the output summary barchart for visualazation
   and the output.csv in data folder gives the final dataset with addition prediction column.
    
+     This project also offer support for S3 and S4 classes both.
+
   
 ```{r predictionModel}
 script_files <- list.files("R/", full.names = TRUE, pattern = "\\.R$")
