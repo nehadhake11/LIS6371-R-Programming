@@ -53,20 +53,11 @@ runprediction(
 }
 \value{
 The function does not return a value but prints the accuracy of the model and generates output files.
+This will print the accuracy and generate output files including a plot.
 
 NULL The function does not return a value but prints the accuracy of the model and generates output files.
 }
 \description{
 Orchestrates a prediction pipeline including reading and cleaning datasets,
 building a model, making predictions, calculating accuracy, and generating output files.
-}
-\examples{
-# Assuming the appropriate CSV files and column names are provided:
-runprediction("path/to/training_data.csv", "path/to/prediction_data.csv",
-              columns = c("ID", "Age", "BloodPressure", "Diabetes_binary"),
-              d_column = "Diabetes_binary",
-              m_columns = c("Age", "BloodPressure"),
-              xAxis_column = "Age",
-              xAxis_columnlabel = c("20-30", "31-40", "41-50"))
-# This will print the accuracy and generate output files including a plot.
 }

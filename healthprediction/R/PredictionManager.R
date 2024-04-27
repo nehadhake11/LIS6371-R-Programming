@@ -11,15 +11,7 @@
 #' @param xAxis_column The name of the column to be used for the x-axis in the output plot.
 #' @param xAxis_columnlabel Labels corresponding to the `xAxis_column` values, used for annotating the plot.
 #' @return The function does not return a value but prints the accuracy of the model and generates output files.
-#' @examples
-#' # Assuming the appropriate CSV files and column names are provided:
-#' runprediction("path/to/training_data.csv", "path/to/prediction_data.csv",
-#'               columns = c("ID", "Age", "BloodPressure", "Diabetes_binary"),
-#'               d_column = "Diabetes_binary",
-#'               m_columns = c("Age", "BloodPressure"),
-#'               xAxis_column = "Age",
-#'               xAxis_columnlabel = c("20-30", "31-40", "41-50"))
-#' # This will print the accuracy and generate output files including a plot.
+#' This will print the accuracy and generate output files including a plot.
 runprediction <- function(model_filepath,prediction_filepath,columns,d_column,m_columns,xAxis_column,xAxis_columnlabel){
   training_dataset <- read_validate_clean_dataset(model_filepath,columns)
   predction_dataset <- read_validate_clean_dataset(prediction_filepath,columns)
