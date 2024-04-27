@@ -1,0 +1,20 @@
+Package: healthprediction
+Type: Package
+Title: builds and runs prediction of health data
+Version: 0.1.0
+Author: Neha Dhake <nehadhake@usf.edu>
+Maintainer: Neha Dhake <nehadhake@usf.edu>
+Description: This package gives the prediction model for determining the probability of having diabeties based on various input parameters.
+  These inputs are generally collected medical services by doctors and submitted to insurance companies in order to assess the health of patient and create careplan accordingly.
+  These are generally captured by health assessments and input file for the program can be easily created from it.
+  For this program, we need on unique id in dataset, one binary binary datapoint for patient having diabetes or not for training and building the model
+  Once the model is build from small fraction of data, it can predict the possibility of patient having diabetes.
+  This model is 86% accurate for dataset of 1.6L records and 1L records for training 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports:
+  dplyr,
+  ggplot2,
+  utils
