@@ -40,10 +40,6 @@ calculate_accuracy <- function(results_dataframe){
 #' @importFrom dplyr group_by summarise mutate
 #' @importFrom utils write.csv
 #' #' @importFrom dplyr %>% group_by summarise mutate n count
-#' @examples
-#' # Assuming 'results_dataframe' and 'initial_dataset' are available and have an 'ID' column,
-#' # 'Diabetes_binary' as the decision column, and 'Age_Group' as the category for the x-axis.
-#' # This will create 'output.csv' in the 'data' directory and save a bar plot image 'boxplot.jpeg'.
 generate_output_file <- function(results_dataframe,initial_dataset,xAxis,xAxisLabels,decision_column,row_names = FALSE){
   results_dataframe <- merge(results_dataframe, initial_dataset, by = "ID")
   write.csv(results_dataframe, "data/output.csv", row.names = row_names)

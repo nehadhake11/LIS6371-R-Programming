@@ -28,6 +28,3 @@ This function builds a logistic regression model using the specified decision co
 
 Builds a logistic regression model using the specified decision column as the response variable and the model columns as predictors.
 }
-\examples{
-# Assuming 'mydata' is a data frame with a binary decision column with other predictor columns
-}

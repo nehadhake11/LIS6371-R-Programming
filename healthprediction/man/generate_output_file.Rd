@@ -57,8 +57,3 @@ and creates a bar plot of the percentage of diabetic cases by a specified catego
 Merges a results data frame with an initial data set, writes the merged data to a CSV file,
 and creates a bar plot of the percentage of diabetic cases by a specified category.
 }
-\examples{
-# Assuming 'results_dataframe' and 'initial_dataset' are available and have an 'ID' column,
-# 'Diabetes_binary' as the decision column, and 'Age_Group' as the category for the x-axis.
-# This will create 'output.csv' in the 'data' directory and save a bar plot image 'boxplot.jpeg'.
-}

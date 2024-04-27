@@ -10,13 +10,6 @@
 #' @return A data frame with the validated (and optionally cleaned) dataset.
 #' @importFrom utils read.csv
 #' @importFrom tools file_ext
-#' @examples
-#' # Assuming you have a CSV file with columns "ID" ,"Binary_result" and other parameters
-#' expected_cols <- c("ID", "Binary_result")
-#' data <- read_validate_clean_dataset("path/to/your/data.csv", expected_cols)
-#'
-#' # If the file is not a CSV or does not contain the expected columns,
-#' # the function will stop and give an error message.
   read_validate_clean_dataset <- function(file_path, expected_columns, expected_extension = "csv", na.strings = c("", "NA")) {
     if (!file.exists(file_path)) {
     stop("File does not exist:", file_path)

@@ -7,8 +7,6 @@
 #' @param model_columns A character vector specifying the names of the predictor columns in the dataset.
 #' @return A glm object representing the fitted logistic regression model.
 #' @importFrom stats as.formula binomial glm predict
-#' @examples
-#' # Assuming 'mydata' is a data frame with a binary decision column with other predictor columns
 build_model <- function(dataset,decision_column,model_columns){
 
     if (!(decision_column %in% names(dataset))) {
