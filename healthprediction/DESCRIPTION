@@ -10,7 +10,6 @@ Description: This package gives the prediction model for determining the probabi
   For this program, we need on unique id in dataset, one binary binary datapoint for patient having diabetes or not for training and building the model
   Once the model is build from small fraction of data, it can predict the possibility of patient having diabetes.
   This model is 86% accurate for dataset of 1.6L records and 1L records for training 
-  
   This project also offer support for S3 and S4 classes both.
 License: GPL-3
 Encoding: UTF-8
