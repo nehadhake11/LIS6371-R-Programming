@@ -19,9 +19,7 @@ c(4, 62, 51, 21, 2, 14, 15)
 abc_poll_percent=c()
 for(result in abc_poll) {
   percentResult = result/sum(abc_poll)*100
-  #print(percentResult)
   percentResult = round(percentResult,digits = 2)
-  #print(percentResult)
   abc_poll_percent=append(abc_poll_percent,percentResult)
 }
 print(abc_poll_percent)
@@ -53,13 +51,13 @@ print(avg_poll_result)
 
 #creating new dataframe with final results
 election_prediction = election
-election_prediction$ABC_PollPrediction <- abc_poll_percent
-election_prediction$CBS_PollPrediction <- cbs_poll_percent
+#election_prediction$ABC_PollPrediction <- abc_poll_percent
+#election_prediction$CBS_PollPrediction <- cbs_poll_percent
 election_prediction$Final_PollPrediction <- avg_poll_result
 election_prediction$Final_PollPrediction_num <- avg_poll_result_numeric
 print(election_prediction)
 
 #plotting into Pie Chart for the visual representation
-pie(election_prediction$Final_PollPrediction_num,labels=as.character(election_prediction$Name),)
+pie(election_prediction$Final_PollPrediction_num,labels=as.character(election_prediction$Name))
 
 
